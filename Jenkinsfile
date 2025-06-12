@@ -9,25 +9,25 @@ pipeline {
 	stages {
 		stage('Clonar') {
 			steps {
-				git clone https://github.com/fahg-cl/SaludoApp.git
+                git url: 'https://github.com/fahg-cl/SaludoApp.git', branch: 'main'
 			}
 	}
 		
 		stage('Compilar') {
 			steps {
-				sh 'mvn clean compile'
+				bat 'mvn clean compile'
 				}
 			}
 
 		stage('Probar') {
 			steps {
-				sh 'mvn test'
+				bat 'mvn test'
 				}
 			}
 
 		stage('Empaquetar') {
 			steps {
-				sh 'mvn package'
+				bat 'mvn package'
 				}
 			}
 		}	
