@@ -2,7 +2,7 @@ package com.equipo.saludo;
 
 public class App {
     public static String saludar(String nombre) {
-        return "¡Hola cómo estas, " + nombre + "!";
+        return "¡Hola como estas, " + nombre + "!";
     }
 
     public static void main(String[] args) {

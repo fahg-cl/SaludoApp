@@ -33,7 +33,7 @@ pipeline {
 		}	
 		post {
 			success {
-				echo "🎉 El build fue exitoso"
+				echo "🎉 El build fue exitoso al fin!"
 				}
 			failure {
 				echo "💥 El build falló"
