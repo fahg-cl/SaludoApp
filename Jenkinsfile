@@ -5,13 +5,12 @@ pipeline {
 		maven 'Maven 3.9.9'
 		jdk 'JDK24'
 	}
-	
-	stages {
-		stage('Clonar') {
-			steps {
-                git url: 'https://github.com/fahg-cl/SaludoApp.git', branch: 'main'
-			}
-	}
+		stages {
+			stage('Clonar') {
+				steps {
+					git url: 'https://github.com/fahg-cl/SaludoApp.git', branch: 'main'
+				}
+		}
 		
 		stage('Compilar') {
 			steps {
